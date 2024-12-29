@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>ST-L2-Task2</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ========================= Task 1 (Dark/Light) ===================== -->
+      <div class="task task-one">
+        <h4>Dark-Light Mode</h4>
+        -------------------------
+        <div class="one">
+          <div class="mode">
+            <img
+              src="./assets/images/icons/sun.svg"
+              alt="sun icon"
+              class="sun"
+            />
+            <img
+              src="./assets/images/icons/moon.svg"
+              alt="moon icon"
+              class="moon"
+            />
+          </div>
+          <h1>Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id esse
+            aperiam excepturi quasi officia itaque rem sapiente ipsum libero
+            maiores ut iusto iure, quam, veniam magnam autem, nam recusandae
+            deserunt?
+          </p>
+        </div>
+      </div>
+      <!-- ========================= Task 2 (Change Theme) ===================== -->
+      <div class="task task-two">
+        <h4>Change Theme</h4>
+        -------------------------
+        <div class="cont">
+          <div class="colors">
+            <div
+              class="color"
+              data-color="#000000"
+              style="background-color: #000000"
+            ></div>
+            <div
+              class="color"
+              data-color="#006400"
+              style="background-color: #006400"
+            ></div>
+            <div
+              class="color"
+              data-color="#550e2f"
+              style="background-color: #550e2f"
+            ></div>
+            <div
+              class="color"
+              data-color="#8a2be2"
+              style="background-color: #8a2be2"
+            ></div>
+          </div>
+          <div class="two">
+            <h1>Hello World</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id esse
+              aperiam excepturi quasi officia itaque rem sapiente ipsum libero
+              maiores ut iusto iure, quam, veniam magnam autem, nam recusandae
+              deserunt?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ========================= Task 3 (Accordion) ====================== -->
+      <div class="task task-three">
+        <h4>Accordion</h4>
+        -------------------------
+        <div class="toolbar">
+          <i class="fas fa-sync-alt" id="reset"></i>
+          <i class="fas fa-plus" id="increase-font"></i>
+          <i class="fas fa-minus" id="decrease-font"></i>
+          <i class="fas fa-bold" id="bold"></i>
+          <i class="fas fa-italic" id="italic"></i>
+          <i class="fas fa-align-left" id="align-left"></i>
+          <i class="fas fa-align-center" id="align-center"></i>
+          <i class="fas fa-align-right" id="align-right"></i>
+          <input type="color" id="color-picker" />
+        </div>
+        <textarea id="editor"></textarea>
+      </div>
+      <!-- ========================= Task 4 (Text Editor) =========================== -->
+      <div class="task task-four">
+        <h4>Text Editor</h4>
+        -------------------------
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              What is HTML?
+              <i class="fa-solid fa-angle-up icon"></i>
+            </button>
+            <div class="accordion-info">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing el
+                Voluptatibus voluptate tempora molestias consectetur
+                exercitationem ipsum reprehenderit facilis, at, sit d maxime ab?
+                Odit officiis ea sunt repellendus ipsa acc
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              What is CSS?
+              <i class="fa-solid fa-angle-up icon"></i>
+            </button>
+            <div class="accordion-info">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing e temporibus
+                tempore numquam labore voluptatibus pariat consequuntur dolorem
+                cumque eveniet magni, accusamus, consectetur. Earum ipsum
+                blanditiis in magnam quo? Do
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              What is JavaScript?
+              <i class="fa-solid fa-angle-up icon"></i>
+            </button>
+            <div class="accordion-info">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing e laborum
+                assumenda velit nisi suscipit, saepe totam fa Explicabo libero
+                eveniet dolorem, aliquam commodi cor magni officiis accusantium
+                sequi ipsa!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========================= Task 5 (choose product) ================= -->
+      <div class="task task-five">
+        <h4>choose product</h4>
+        -------------------------
+        <div class="image-gallery">
+          <div class="thum">
+            <img
+              src="./assets/images/f4.png"
+              alt="Thum 1"
+              onclick="showImage(this)"
+            />
+            <img
+              src="./assets/images/f3.png"
+              alt="Thum 2"
+              onclick="showImage(this)"
+            />
+            <img
+              src="./assets/images/f2.png"
+              alt="Thum 3"
+              onclick="showImage(this)"
+            />
+            <img
+              src="./assets/images/f1.png"
+              alt="Thum 4"
+              onclick="showImage(this)"
+            />
+          </div>
+          <div class="preview">
+            <img
+              id="main-image"
+              src="./assets/images/f4.png"
+              alt="Main Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js" defer></script>
+  </body>
+</html>
